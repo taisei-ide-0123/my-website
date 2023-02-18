@@ -1,6 +1,6 @@
 export const parameters = {
   backgrounds: {
-    default: 'light',
+    default: "dark",
   },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -9,4 +9,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
