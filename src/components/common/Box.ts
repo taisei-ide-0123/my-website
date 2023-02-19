@@ -6,13 +6,13 @@ interface BoxProps {
   fullH?: boolean;
   w?: number;
   fullW?: boolean;
-  p?: number;
-  pt?: number;
-  pb?: number;
-  pl?: number;
-  pr?: number;
-  px?: number;
-  py?: number;
+  p?: string;
+  pt?: string;
+  pb?: string;
+  pl?: string;
+  pr?: string;
+  px?: string;
+  py?: string;
   center?: boolean;
   radius?: number;
 }
@@ -24,19 +24,24 @@ export const Box = styled.div<BoxProps>`
   ${(props) => (props.fullH ? "height: 100%;" : null)}
   ${(props) => (props.w ? `width: ${props.w}px;` : null)}
   ${(props) => (props.fullW ? "width: 100%;" : null)}
-  ${(props) => (props.p ? `padding: ${props.p}px;` : null)}
-  ${(props) => (props.pt ? `padding-top: ${props.pt}px;` : null)}
-  ${(props) => (props.pb ? `padding-bottom: ${props.pb}px;` : null)}
-  ${(props) => (props.pl ? `padding-left: ${props.pl}px;` : null)}
-  ${(props) => (props.pr ? `padding-right: ${props.pr}px;` : null)}
+  ${(props) => (props.p ? `padding: ${props.p};` : null)}
+  ${(props) => (props.pt ? `padding-top: ${props.pt};` : null)}
+  ${(props) => (props.pb ? `padding-bottom: ${props.pb};` : null)}
+  ${(props) => (props.pl ? `padding-left: ${props.pl};` : null)}
+  ${(props) => (props.pr ? `padding-right: ${props.pr};` : null)}
   ${(props) =>
-    props.px
-      ? `padding-left: ${props.px}px; padding-right: ${props.px}px;`
-      : null}
+    props.px ? `padding-left: ${props.px}; padding-right: ${props.px};` : null}
   ${(props) =>
-    props.py
-      ? `padding-top: ${props.py}px; padding-bottom: ${props.py}px;`
-      : null}
+    props.py ? `padding-top: ${props.py}; padding-bottom: ${props.py};` : null}
   ${(props) => (props.center ? "align-items: center;" : null)}
   ${(props) => (props.radius ? `border-radius: ${props.radius}px;` : null)}
+`;
+
+export const CenterBox = styled(Box)`
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Column = styled(Box)`
+  flex-direction: column;
 `;
