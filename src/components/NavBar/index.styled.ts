@@ -5,8 +5,11 @@ export const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 60px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
 `;
 
 export const Character = styled.span`
@@ -27,7 +30,7 @@ export const UnorderedList = styled.ul`
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  width: 330px;
+  height: 100%;
 `;
 
 export const List = styled.li`

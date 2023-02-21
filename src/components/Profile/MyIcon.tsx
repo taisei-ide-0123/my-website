@@ -5,7 +5,7 @@ import Me from "public/me.jpg";
 
 const MyIcon = () => {
   return (
-    <CenterBox h={61.5}>
+    <CenterBox h="61.5px">
       <CircleIcon src={Me} alt="me" width={123} height={123} />
     </CenterBox>
   );

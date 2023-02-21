@@ -9,6 +9,7 @@ export const Container = styled(Column)`
 export const FullImg = styled(Image)`
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem 0 0 0;
 `;
 
 export const CircleIcon = styled(Image)`

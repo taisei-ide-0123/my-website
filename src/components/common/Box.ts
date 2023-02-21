@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 interface BoxProps {
   bgc?: string;
-  h?: number;
+  h?: string;
   fullH?: boolean;
-  w?: number;
+  w?: string;
   fullW?: boolean;
   p?: string;
   pt?: string;
@@ -20,9 +20,9 @@ interface BoxProps {
 export const Box = styled.div<BoxProps>`
   display: flex;
   ${(props) => (props.bgc ? `background-color: ${props.bgc};` : null)}
-  ${(props) => (props.h ? `height: ${props.h}px;` : null)}
+  ${(props) => (props.h ? `height: ${props.h};` : null)}
   ${(props) => (props.fullH ? "height: 100%;" : null)}
-  ${(props) => (props.w ? `width: ${props.w}px;` : null)}
+  ${(props) => (props.w ? `width: ${props.w};` : null)}
   ${(props) => (props.fullW ? "width: 100%;" : null)}
   ${(props) => (props.p ? `padding: ${props.p};` : null)}
   ${(props) => (props.pt ? `padding-top: ${props.pt};` : null)}
@@ -44,4 +44,14 @@ export const CenterBox = styled(Box)`
 
 export const Column = styled(Box)`
   flex-direction: column;
+`;
+
+export const Space = styled(Box)`
+  flex: 1;
+`;
+
+export const MainSection = styled(Box)`
+  background-color: #111827;
+  border-radius: 0.5rem;
+  box-shadow: -0.5rem -0.5rem rgba(245, 158, 11, 0.3);
 `;

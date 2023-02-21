@@ -1,7 +1,8 @@
 import React from "react";
 import { CenterBox } from "../common/Box";
+import Description from "./Description";
 import Header from "./Header";
-import { Description, StyledArticle } from "./index.styled";
+import { StyledArticle } from "./index.styled";
 
 interface IntroductionProps {
   header: string;
@@ -13,7 +14,7 @@ const Introduction = ({ header, introduction }: IntroductionProps) => {
     <CenterBox>
       <StyledArticle>
         <Header header={header} />
-        <Description color="#d1d5db">{introduction}</Description>
+        <Description introduction={introduction} />
       </StyledArticle>
     </CenterBox>
   );

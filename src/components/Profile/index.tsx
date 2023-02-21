@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <Container fullW fullH>
       <BackgroundImage />
-      <Column fullW fullH>
+      <Column fullW h="50%">
         <MyIcon />
         <MyName />
         <MySpecialization />

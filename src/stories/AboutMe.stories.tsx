@@ -3,7 +3,7 @@ import AboutMe from "@/components/AboutMe";
 
 const Template = () => {
   return (
-    <Box bgc={"#111827"} h={550} w={600} p="2rem">
+    <Box bgc={"#111827"} h="550px" w={600} p="2rem">
       <AboutMe />
     </Box>
   );
