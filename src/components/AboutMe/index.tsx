@@ -3,6 +3,7 @@ import Title from "../common/Title";
 import Introduction from "./Introduction";
 import PersonalInfo from "./PersonalInfo";
 import { aboutMe } from "data/aboutMe";
+import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
@@ -18,6 +19,7 @@ const AboutMe = () => {
         residence={aboutMe.residence}
         birthday={aboutMe.birthday}
       />
+      <Skills />
     </Column>
   );
 };

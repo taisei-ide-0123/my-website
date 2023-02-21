@@ -3,7 +3,7 @@ import { Box } from "@/components/common/Box";
 
 const Template = () => {
   return (
-    <Box bgc={"#010A1F"} h={60} fullW>
+    <Box bgc={"#010A1F"} h="60px" fullW>
       <NavBar />
     </Box>
   );

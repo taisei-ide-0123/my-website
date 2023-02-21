@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header = ({ header }: HeaderProps) => {
   return (
-    <Box>
+    <Box px="1.5rem" py="0.50rem">
       <StyledHeader>{header}</StyledHeader>
     </Box>
   );

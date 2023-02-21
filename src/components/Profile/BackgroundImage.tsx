@@ -4,13 +4,8 @@ import BackgroundImg from "public/okinawa_soba_restaurant.jpg";
 
 const BackgroundImage = () => {
   return (
-    <Box fullW fullH>
-      <FullImg
-        src={BackgroundImg}
-        alt="okinawa_soba_restaurant"
-        width={370}
-        height={500}
-      />
+    <Box fullW h="50%">
+      <FullImg src={BackgroundImg} alt="okinawa_soba_restaurant" />
     </Box>
   );
 };
