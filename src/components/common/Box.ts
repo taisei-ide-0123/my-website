@@ -15,6 +15,7 @@ interface BoxProps {
   py?: string;
   center?: boolean;
   radius?: number;
+  gap?: string;
 }
 
 export const Box = styled.div<BoxProps>`
@@ -35,6 +36,7 @@ export const Box = styled.div<BoxProps>`
     props.py ? `padding-top: ${props.py}; padding-bottom: ${props.py};` : null}
   ${(props) => (props.center ? "align-items: center;" : null)}
   ${(props) => (props.radius ? `border-radius: ${props.radius}px;` : null)}
+  ${(props) => (props.gap ? `gap: ${props.gap};` : null)}
 `;
 
 export const CenterBox = styled(Box)`
@@ -44,6 +46,10 @@ export const CenterBox = styled(Box)`
 
 export const Column = styled(Box)`
   flex-direction: column;
+`;
+
+export const CenterColumn = styled(Column)`
+  justify-content: center;
 `;
 
 export const Space = styled(Box)`
