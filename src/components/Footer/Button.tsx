@@ -6,8 +6,8 @@ import { StyledButton, StyledLink } from "./index.styled";
 const Button = () => {
   return (
     <StyledButton>
-      <StyledLink href="https://github.com/taisei-ide-0123/portfolio">
-        <FaGithub />
+      <StyledLink href="https://github.com/taisei-ide-0123/my-website">
+        <FaGithub color="#f59e0b" />
         <Text fw={700} fs="0.75rem" color="#f59e0b">
           View Source Code
         </Text>

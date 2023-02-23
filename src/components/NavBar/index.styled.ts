@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
+export const Wapper = styled.div`
+  width: 100vw;
+  height: 5.75rem;
+`;
+
 export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background-color: #000a1f;
   width: 100vw;
-  height: 60px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
+  height: 5.75rem;
+  padding: 0 2rem;
+  z-index: 999;
 `;
 
 export const Character = styled.span`
@@ -40,8 +45,12 @@ export const List = styled.li`
   list-style: none;
 `;
 
-export const Text = styled.p`
-  color: #727983;
+interface TextProps {
+  isClickedText: boolean;
+}
+
+export const Text = styled.p<TextProps>`
+  color: ${(props) => (props.isClickedText ? "#fff" : "#727983")};
   font-weight: 700;
   font-size: 1rem;
   font-family: sans-serif;

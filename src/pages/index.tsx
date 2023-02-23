@@ -1,12 +1,18 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import { useState } from "react";
 import { Box, MainSection } from "@/components/common/Box";
 import NavBar from "@/components/NavBar";
 import Profile from "@/components/Profile";
 import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
+import { Main } from "@/components/common/Main";
+import { navbarList } from "data/navbarList";
 
 export default function Home() {
+  const [content, setContent] = useState(navbarList[0]);
+  const handleClick = (contentName: string) => {
+    setContent(contentName);
+  };
   return (
     <>
       <Head>
@@ -15,15 +21,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
-      <main className={styles.main}>
+      <NavBar handleClick={handleClick} content={content} />
+      <Main>
         <Box>
           <MainSection>
             <Profile />
-            <AboutMe />
+            {content === navbarList[0] ? <AboutMe /> : null}
           </MainSection>
         </Box>
-      </main>
+      </Main>
       <Footer />
     </>
   );
