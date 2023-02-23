@@ -4,6 +4,7 @@ import { Box, MainSection } from "@/components/common/Box";
 import NavBar from "@/components/NavBar";
 import Profile from "@/components/Profile";
 import AboutMe from "@/components/AboutMe";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           </MainSection>
         </Box>
       </main>
+      <Footer />
     </>
   );
 }
