@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Box, MainSection } from "@/components/common/Box";
 import NavBar from "@/components/NavBar";
 import Profile from "@/components/Profile";
-import AboutMe from "@/components/AboutMe";
+import Contents from "@/components/Contents";
 import Footer from "@/components/Footer";
 import { Main } from "@/components/common/Main";
 import { navbarList } from "data/navbarList";
@@ -24,9 +24,9 @@ export default function Home() {
       <NavBar handleClick={handleClick} content={content} />
       <Main>
         <Box>
-          <MainSection>
+          <MainSection fullW>
             <Profile />
-            {content === navbarList[0] ? <AboutMe /> : null}
+            <Contents content={content} navbarList={navbarList} />
           </MainSection>
         </Box>
       </Main>

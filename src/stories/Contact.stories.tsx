@@ -1,10 +1,10 @@
 import { Box } from "@/components/common/Box";
-import AboutMe from "@/components/AboutMe";
+import Contact from "@/components/Contact";
 
 const Template = () => {
   return (
     <Box bgc={"#111827"} h="550px" w="600px" p="2rem">
-      <AboutMe />
+      <Contact />
     </Box>
   );
 };
@@ -12,7 +12,7 @@ const Template = () => {
 export const StoryAboutMe = Template.bind({});
 
 const storyBookObj = {
-  title: "AboutMe",
+  title: "Contact",
   tags: ["autodocs"],
 };
 
