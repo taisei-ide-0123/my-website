@@ -57,7 +57,19 @@ export const Space = styled(Box)`
 `;
 
 export const MainSection = styled(Box)`
+  height: calc(100vh - 5.75rem - 6rem);
   background-color: #111827;
   border-radius: 0.5rem;
   box-shadow: -0.5rem -0.5rem rgba(245, 158, 11, 0.3);
+  @media screen and (max-width: 768px) {
+    height: calc(100vh - 5.75rem);
+    box-shadow: none;
+    border-radius: 0;
+  }
+`;
+
+export const PageContainer = styled.div`
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
 `;

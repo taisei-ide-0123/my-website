@@ -1,5 +1,6 @@
 import AboutMe from "../AboutMe";
 import Contact from "../Contact";
+import { ContentsContainer } from "./index.styled";
 
 interface ContentsProps {
   content: string;
@@ -7,13 +8,11 @@ interface ContentsProps {
 }
 
 const Contents = ({ content, navbarList }: ContentsProps) => {
-  if (content === navbarList[0]) {
-    return <AboutMe />;
-  } else if (content === navbarList[1]) {
-    return <Contact />;
-  } else {
-    return <AboutMe />;
-  }
+  return (
+    <ContentsContainer>
+      {content === navbarList[0] ? <AboutMe /> : <Contact />}
+    </ContentsContainer>
+  );
 };
 
 export default Contents;

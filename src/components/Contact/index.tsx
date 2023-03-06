@@ -5,10 +5,10 @@ import { contact } from "data/contact";
 
 const Contact = () => {
   return (
-    <Column fullH fullW>
+    <>
       <Title title={contact.title} />
       <ContactForm />
-    </Column>
+    </>
   );
 };
 

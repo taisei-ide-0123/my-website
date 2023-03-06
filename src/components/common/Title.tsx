@@ -7,7 +7,7 @@ interface TitleProps {
 
 const Title = ({ title }: TitleProps) => {
   return (
-    <Container p="1.5rem">
+    <Container>
       <StyledTitle color="#d1d5db" fs="1.875rem">
         {title}
       </StyledTitle>

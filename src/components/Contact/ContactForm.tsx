@@ -1,8 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Column } from "../common/Box";
 import { Text } from "../common/Text";
-import { Form, Input, Textarea, Button } from "./index.styled";
+import { Form, Input, Textarea, Button, FormContainer } from "./index.styled";
 import { validateContactForm } from "schemas/contactFormSchema";
 
 type FieldValuesType = {
@@ -39,7 +38,7 @@ const ContactForm = () => {
     },
   });
   return (
-    <Column fullH fullW p="2rem">
+    <FormContainer fullH fullW>
       <Form onSubmit={formik.handleSubmit}>
         <Input
           name="fullName"
@@ -72,7 +71,7 @@ const ContactForm = () => {
         )}
         <Button type="submit">Submit</Button>
       </Form>
-    </Column>
+    </FormContainer>
   );
 };
 
