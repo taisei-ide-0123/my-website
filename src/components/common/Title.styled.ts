@@ -22,4 +22,8 @@ export const Container = styled(Box)`
   justify-content: left;
   align-items: center;
   gap: 2rem;
+  padding: 1.5rem;
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem 1rem 2rem;
+  }
 `;

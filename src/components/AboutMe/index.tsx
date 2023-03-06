@@ -7,7 +7,7 @@ import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
-    <Column>
+    <>
       <Title title={aboutMe.title} />
       <Introduction
         header={aboutMe.header}
@@ -20,7 +20,7 @@ const AboutMe = () => {
         birthday={aboutMe.birthday}
       />
       <Skills />
-    </Column>
+    </>
   );
 };
 

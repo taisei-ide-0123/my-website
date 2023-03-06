@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Column } from "../common/Box";
 
 const commonFieldStyle = css`
   display: flex;
@@ -22,7 +23,7 @@ const commonFieldStyle = css`
 
 export const Form = styled.form`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -62,5 +63,12 @@ export const Button = styled.button`
   :active {
     transform: translateY(-0.5rem);
     transition: transform 0.3s ease-in-out;
+  }
+`;
+
+export const FormContainer = styled(Column)`
+  padding: 2rem;
+  @media screen and (min-width: 480px) {
+    padding: 0 2rem;
   }
 `;

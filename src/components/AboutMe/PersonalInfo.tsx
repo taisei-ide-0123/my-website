@@ -16,7 +16,7 @@ const PersonalInfo = ({
   birthday,
 }: PersonalInfoProps) => {
   return (
-    <Grid p="1.75rem">
+    <Grid>
       <Box center>
         <Text color="#d1d5db">Nation・・・</Text>
         <Text color="#9ca3af">{nation}</Text>

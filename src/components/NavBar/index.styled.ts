@@ -15,6 +15,9 @@ export const Container = styled.nav`
   height: 5.75rem;
   padding: 0 2rem;
   z-index: 999;
+  @media screen and (max-width: 768px) {
+    background-color: #111827;
+  }
 `;
 
 export const Character = styled.span`
