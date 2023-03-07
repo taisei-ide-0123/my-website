@@ -3,7 +3,7 @@ import Profile from "@/components/Profile";
 
 const Template = () => {
   return (
-    <Box bgc={"#111827"} h="550px" w={370}>
+    <Box bgc={"#111827"} h="550px" w="370px">
       <Profile />
     </Box>
   );
