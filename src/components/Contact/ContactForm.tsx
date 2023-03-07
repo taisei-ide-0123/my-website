@@ -34,7 +34,7 @@ const ContactForm = () => {
     validationSchema: Yup.object(validateContactForm()),
     onSubmit: (values: FieldValuesType) => {
       // Fix to be able to send emails
-      alert(JSON.stringify(values, null, 2));
+      alert("Sorry, function to contact has not implemented yet.");
     },
   });
   return (
